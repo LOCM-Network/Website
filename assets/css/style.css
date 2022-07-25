@@ -5,12 +5,12 @@
 }
 
 @font-face {
-    src: url(../Fonts/TitleFont.ttf);
+    src: url(../fonts/TitleFont.ttf);
     font-family: TitleFont;
 }
 
 @font-face {
-    src: url(../Fonts/DetailsFont.otf);
+    src: url(../fonts/DetailsFont.otf);
     font-family: DetailsFont;
 }
 
