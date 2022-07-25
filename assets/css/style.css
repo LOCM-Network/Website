@@ -1,0 +1,477 @@
+:root {
+    --orange: #CA480E;
+    --red: #B31104;
+    --gradient: linear-gradient(90deg, var(--orange), var(--red));
+}
+
+@font-face {
+    src: url(../Fonts/TitleFont.ttf);
+    font-family: TitleFont;
+}
+
+@font-face {
+    src: url(../Fonts/DetailsFont.otf);
+    font-family: DetailsFont;
+}
+
+* {
+    font-family: 'DetailsFont';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection {
+    background: var(--orange);
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #222222;
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background: var(--gradient);
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.heading {
+    text-align: center;
+    background: var(--gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+header .logo span {
+    color: var(--red);
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--red);
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    font-size: 3rem;
+    color: var(--orange);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trangchu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/trangchu-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trangchu .image img {
+    width: 40vw;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-3.2rem);
+    }
+}
+
+.trangchu .content h3 {
+    font-size: 5.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.trangchu .content h3 span {
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.trangchu .content p {
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.thanhtuu {
+    background: url(../images/thanhtuu-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.thanhtuu .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thanhtuu .box-container .box {
+    flex: 1 1 30rem;
+    background: #fff;
+    border: .3rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.thanhtuu .box-container .box:hover {
+    transform: scale(1.1);
+}
+
+.thanhtuu .box-container .box img {
+    height: 20rem;
+}
+
+.thanhtuu .box-container .box h3 {
+    font-size: 3rem;
+    color: var(--red);
+    padding-top: 0.5rem;
+}
+
+.thanhtuu .box-container .box p {
+    font-size: 1.3rem;
+    color: #666;
+    padding: 0.5rem 0;
+}
+
+.maychu {
+    background: url(../images/maychu-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 3rem;
+}
+
+.maychu .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.maychu .column .image {
+    flex: 1 1 40rem;
+}
+
+.maychu .column .image img {
+    width: 100%;
+    animation: float02 5s linear infinite;
+}
+
+@keyframes float02 {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+
+.maychu .column .content {
+    flex: 1 1 40rem;
+}
+
+.maychu .column .content h3 {
+    font-size: 5.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.maychu .column .content h3 span {
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.maychu .column .content p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.maychu .column .content .buttons a {
+    margin-left: 8px;
+}
+
+.trian {
+    background: url(../images/trian-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 3rem;
+}
+
+.trian .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trian .box-container .box {
+    flex: .3 .3 20rem;
+    background: #fff;
+    border: .2rem solid var(--red);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: 3rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.trian .box-container .box .user img {
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+.trian .box-container .box .user h3 {
+    font-size: 3rem;
+    background: var(--gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.footer {
+    padding-top: 1rem;
+    background: url(../images/footer-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+    flex: 1 1 15rem;
+    margin: 2rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a:hover {
+    text-decoration: underline;
+}
+
+.footer .box-container .box .info {
+    display: flex;
+    align-items: center;
+}
+
+.footer .credit {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+    color: #fff;
+    border-top: .1rem solid #fff5;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+/* media queries  */
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    section {
+        padding: 0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    header label {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked~.navbar {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked~label::before {
+        content: '\f00d';
+    }
+
+    .trangchu {
+        flex-flow: column-reverse;
+    }
+
+    .trangchu .image img {
+        width: 100%;
+    }
+
+    .trangchu .content {
+        padding: 0 3rem 0 3rem;
+    }
+
+    .trangchu .content h3 {
+        font-size: 3.6rem;
+    }
+
+    .trangchu .content p {
+        font-size: 1.5rem;
+    }
+
+    .maychu {
+        background-position: right;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .maychu .column .content .buttons a {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 8px;
+        padding-top: 5px;
+        padding-bottom: 1px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 50px;
+        background: var(--gradient);
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transition: all .3s linear;
+    }
+
+}
