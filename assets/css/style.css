@@ -81,44 +81,62 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: #000;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    padding: 2rem 9%;
+    padding: 0.5rem 9%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
+    z-index: 2;
 }
 
 header .logo {
     font-size: 2rem;
     color: var(--orange);
+    padding: 1rem;
 }
 
 header .logo span {
     color: var(--red);
 }
 
-header .navbar a {
-    font-size: 1.7rem;
-    margin-left: 2rem;
-    color: var(--red);
+.n-navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    margin-left: auto;
 }
 
-header .navbar a:hover {
-    color: var(--orange);
-}
-
-header input {
+.n-navbar #links {
     display: none;
 }
 
-header label {
-    font-size: 3rem;
+.n-navbar a {
+    color: white;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.n-navbar a:hover {
+    background-color: rgb(122, 82, 82);
+    color: rgb(255, 0, 0);
+}
+
+header .n-navbar {
+    font-size: 1rem;
     color: var(--orange);
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
+}
+
+header .n-navbar span {
+    color: var(--red);
+}
+
+header .n-navbar a {
+    font-size: 1.7rem;
+    color: var(--red);
+}
+
+header .n-navbar a:hover {
+    color: var(--orange);
 }
 
 .trangchu {

@@ -11,9 +11,10 @@
     <meta property="og:background" content="assets/images/Thumbnail.png" />
     <meta property="og:image" content="assets/images/Thumbnail.png" />
     <meta property="og:type" content="website" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>LOCM Network | locm.network</title>
-
+    <script type="text/javascript" src="assets/js/script.js"></script>  
     <!-- Links (CSS, icons) -->
     <link rel="icon" type="image/png" sizes="600x600" href="favicon.ico" />
     <link rel="stylesheet" href="assets/css/style.css">
@@ -23,20 +24,21 @@
     <!-- Web's header -->
     <header>
         <a href="#" class="logo"><span>Legend Of </span>Craft Master</a>
-
-        <!-- TODO: add toggle button for mobile users -->
-        <!-- <input type="checkbox" id="menu-bar">
-            <label for="menu-bar" class="fas fa-bars"></label> -->
-
-        <nav class="navbar">
-            <a href="#trangchu">Trang chủ</a>
-            <a href="#thanhtuu">Thành tựu</a>
-            <a href="#maychu">Máy chủ</a>
-            <a href="#trian">Tri ân</a>
-            <a href="/vote">Bình chọn</a>
-            <a href="./discord.html">Discord</a>
-            <a href="./donate.html">Đóng góp</a>
-        </nav>
+        <div class="n-navbar">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="blockNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            <div id="links">
+                <a href="#trangchu">Trang chủ</a>
+                <a href="#thanhtuu">Thành tựu</a>
+                <a href="#maychu">Máy chủ</a>
+                <a href="#trian">Tri ân</a>
+                <a href="/vote">Bình chọn</a>
+                <a href="./discord.html">Discord</a>
+                <a href="./donate.html">Đóng góp</a>
+            </div>
+        </div>
     </header>
     <!-- Web's header -->
 
