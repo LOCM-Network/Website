@@ -99,7 +99,7 @@ header .logo span {
 
 .n-navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(2, 0, 0);
     position: relative;
     margin-left: auto;
 }
