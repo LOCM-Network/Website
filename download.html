@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+body {
+    text-align:center;
+    margin: auto;
+    background: url(./assets/images/trangchu-background.png) no-repeat;
+}
+h2 {
+    font-size: 50px;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.discord-btn {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #7289da;
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+</head>
+<body>
+
+<h2>Minecraft bedrock 1.19.50</h2>
+<button class="btn" onclick="download()"><i class="fa fa-download"></i> Tải Game</button>
+<button class="discord-btn" onclick="discord()" >
+    <i class="fa fa-discord"></i>
+    Nếu bạn đang sử dụng hệ điều hành Window, IOS vui lòng truy cập Discord để được hỗ trợ tải game
+</button>
+<script>
+function download() {
+  window.location.href = "https://link.nestvui.com/BANDISHARE/GAME/MCPE/Minecraft_PE_1.19.50_BANDISHARE.apk";
+}
+function discord() {
+  window.location.href = "https://locm.network/discord";
+}
+</script>
+</body>
+</html>
